@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Weather App</h1>
+    </header>
+    <main>
+        <section class="weather-container">
+            <div class="search-bar">
+                <input type="text" id="city-input" placeholder="Enter city name" aria-label="Enter city name">
+                <button id="search-button" aria-label="Search">🔍</button>
+            </div>
+            <div class="weather-card" id="weather-card" role="region" aria-live="polite">
+                <div class="weather-icon" id="weather-icon" aria-label="Weather icon">☀️</div>
+                <div class="temperature" id="temperature" aria-label="Temperature">7°C</div>
+                <div class="city-name" id="city-name" aria-label="City name">New York</div>
+                <div class="weather-details">
+                    <div class="humidity" id="humidity" aria-label="Humidity">
+                        <span>💧 48%</span>
+                    </div>
+                    <div class="wind-speed" id="wind-speed" aria-label="Wind speed">
+                        <span>🌬️ 10.29 km/h</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Weather App. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
